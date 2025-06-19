@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: 
+    linear-gradient(rgba(151, 151, 151, 0.1), rgba(0, 0, 0, 0.1)),
+    url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav img{
+  width: 161px;
+  height: 32px;
+}
+
+.nav-links ul{
+  display: flex;
+  gap: 20px;
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:active {
+  color: #FF6565;
+}
+
+.text-box{
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin-top: 19%;
+}
+
+.text-box h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.txt-paragraph1{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+
+.txt-paragraph2{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+}
+ 
+button{
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF6565;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10%;
+  
+
+}
+
+button:hover,
+button:active{
+  opacity: 0.9;
+}
+
+/* Hide default checkbox */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.menu-icon .close {
+  display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  } 
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .txt-paragraph1,
+  .txt-paragraph2 {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-icon {
+  display: block;
+  z-index: 999;
+
+}
+
+/* Show hamburger by default */
+  #menu-toggle:not(:checked) ~ .menu-icon .open {
+  display: inline;
+}
+  #menu-toggle:not(:checked) ~ .menu-icon .close {
+  display: none;
+}
+
+/* Show close icon when menu is open */
+  #menu-toggle:checked ~ .menu-icon .open {
+  display: none;
+}
+  #menu-toggle:checked ~ .menu-icon .close {
+  display: inline;
+}
+
+/* Menu hidden by default */
+  .nav-links {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+  display: block;
+}
+
+
+}
