@@ -131,6 +131,41 @@ button:active{
   display: none;
 }
 
+/*CSS code for 1-index.html*/
+.icon{
+  display: inline;
+  color: #FF6565;
+  width: 94.2px;
+  height: 65.36px;
+  font-size: 94.2px; /* Needed so the icon scales to fit the box */
+  line-height: 65.36px; /* Vertically center the icon */
+  text-align: center;
+
+}
+
+.services{
+  display: flex;
+  align-items: center;
+  padding-bottom: 120px;
+  padding-top: 80px;
+}
+
+.service-card {
+  text-align: center;
+}
+
+.service-card p{
+  padding-top: 50px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.ctn-paragraph{
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 150px;
+}
 
 @media screen and (max-width: 480px) {
   .nav-links ul{
@@ -194,5 +229,17 @@ button:active{
   #menu-toggle:checked ~ .nav-links {
   display: block;
 }
+/*media query for the what we do section*/
+.services {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+service-card p{
+  min-height: 3em;
+}
+
+
 
 }
+
