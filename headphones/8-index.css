@@ -1,0 +1,515 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: 
+    linear-gradient(rgba(151, 151, 151, 0.1), rgba(0, 0, 0, 0.1)),
+    url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 15px 0;
+  z-index: 999;
+  background: transparent;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav img{
+  width: 161px;
+  height: 32px;
+}
+
+.nav-links ul{
+  display: flex;
+  gap: 20px;
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:active {
+  color: #FF6565;
+}
+
+.text-box{
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  margin-top: 50%;
+  padding-bottom: 100px
+}
+
+.text-box h1{
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+.txt-paragraph1{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 8%;
+}
+
+.txt-paragraph2{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+}
+ 
+button{
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF6565;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10%;
+  
+
+}
+
+button:hover,
+button:active{
+  opacity: 0.9;
+}
+
+/* Hide default checkbox */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.menu-icon .close {
+  display: none;
+}
+
+/*CSS code for 1-index.html*/
+
+/* Bounce In on Load */
+@keyframes bounceIn {
+  20% {
+    transform: scale(0.9) translateY(30px);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05) translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Default state: hidden and moved down */
+.service-card {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Scroll-triggered animation */
+.service-card.animate-bounce {
+  animation: bounceIn 1.2s ease-out forwards;
+}
+
+.service-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  cursor: pointer;
+}
+
+.service-card:hover .icon {
+  color: #ff3b3b;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon{
+  display: inline-block;
+  color: #FF6565;
+  width: 94.2px;
+  height: 65.36px;
+  font-size: 94.2px; /* Needed so the icon scales to fit the box */
+  line-height: 65.36px; /* Vertically center the icon */
+  text-align: center;
+  transition: transform 0.4s ease, color 0.3s ease, opacity 0.4s ease;
+
+}
+.icon:hover{
+  transform: rotate(15deg) scale(1.15) translateY(-4px);
+  opacity: 0.9;
+  color: #ff3b3b;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.services{
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: #071629;
+}
+
+.service-card p{
+  padding-top: 50px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.ctn-paragraph{
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center; 
+  color: #071629;
+
+}
+
+.ctn-title{
+  margin-top: 130px;
+  padding-bottom: 20px;
+  margin-left: 40%;
+  font-size: 32px;
+  font-weight: 600;
+  color: #071629;
+
+}
+/*CSS style for 2-index.html*/
+
+.result-ctn {
+  min-height: 80vh;
+  width: 100%;
+  background-image: 
+    linear-gradient(rgba(151, 151, 151, 0.2), rgba(7, 22, 41, 0.5)),
+    url(images/headphones_hero_2.jpg);
+  background-size: cover;
+  background-position: center;
+
+  align-content: center;
+  padding-bottom: 55px;
+  color: #FFFFFF;
+}
+
+.container1{
+  max-width: 1000px;
+  margin: 130px auto 36px auto;
+  padding: 0 20px;
+}
+
+.container1 h1{
+  margin-bottom: 35px;
+  margin-left: 23%;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.ctn-paragraph1{
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.results{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  gap: 70px;
+    
+}
+
+.results img{
+  width: 180px;
+  height: 180px;
+}
+.result-card{
+  align-content: center;
+  position: relative;
+  transition: transform 0.9s ease, opacity 0.4s ease;
+  opacity: 1;
+}
+
+.result-card:hover {
+  transform: scale(1.07) rotate(10deg) translateY(-8px);
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+
+.result-card .result-para1{
+  position: absolute;
+  top: 70px;
+  left: 38px;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.result-card .result-para2{
+  position: absolute;
+  top: 70%;
+  left: 30px;
+  font-size: 14px;
+}
+
+/*CSS style for 3-index.html*/ 
+
+.container2{
+  text-align: center;
+  max-width: 1000px;
+  margin: 100px auto 1px auto;
+}
+
+.container2 h1{
+ font-size: 32px;
+ font-weight: 600; 
+ color: #071629;
+}
+
+
+.container2 form{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-top: 20px;
+}
+
+.container2 button{
+  margin-top: 55px;
+}
+
+input, textarea{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #071629;
+}
+
+/*CSS style for 4-index.html*/
+
+.footer-ctn {
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #071629;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.footer-ctn1 {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 140vh; 
+}
+.footer-ctn1 p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+}
+
+.footer-ctn1 img{
+  width: 161px;
+  height: 32px;
+}
+
+.icon1{
+  width: 30px;
+  height: 30px;
+  font-size: 30px; /* Needed so the icon scales to fit the box */
+  line-height: 30px;
+  padding-left: 15px;
+  
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+/* Mobile menu hidden by default */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  } 
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .txt-paragraph1,
+  .txt-paragraph2 {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-icon {
+  display: block;
+  z-index: 999;
+
+}
+
+/* Show hamburger by default */
+  #menu-toggle:not(:checked) ~ .menu-icon .open {
+  display: inline;
+}
+  #menu-toggle:not(:checked) ~ .menu-icon .close {
+  display: none;
+}
+
+/* Show close icon when menu is open */
+  #menu-toggle:checked ~ .menu-icon .open {
+  display: none;
+}
+  #menu-toggle:checked ~ .menu-icon .close {
+  display: inline;
+}
+
+/* Menu hidden by default */
+  .nav-links {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+  display: block;
+}
+/*media query for the what we do section*/
+.services {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+service-card p{
+  min-height: 3em;
+}
+.results{
+  flex-direction: column;
+}
+.container1 h1,
+.ctn-title{
+  font-size: 20px;
+}
+.footer-ctn1{
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #071629;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+
